@@ -6,7 +6,7 @@ form{
   flex-direction: column;
   justify-content: space-around;
   max-width: 300px;
-  min-height: 100px;
+  min-height: 50vh;
   margin: auto;
   /* border: 2px solid cadetblue; */
 }
@@ -18,4 +18,15 @@ input:focus{
 label{
   display: flex;
   flex-direction: column;
+}
+.btn-block{
+  text-align: center;
+}
+input:disabled{
+  background: rgb(228,213,241);
+}
+*::placeholder{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  font-size: 0.8em;
 }

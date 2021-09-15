@@ -8,14 +8,74 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <form action="#">
-    <label><span>User name</span>
-    <input autofocus type="text" placeholder="User name">
+  <form action="/test" memthod="GET">
+    <fieldset><legend>User name</legend>
+    <label><span>First name</span>
+    <input autofocus
+           type="text" 
+           placeholder="First name"
+           name="firstName"
+           required
+           autocomplete="username"
+           /*pattern="^[A-Z][a-z]{2,15}$"*/>
   </label>
+  <form action="/test" memthod="GET">
+    <label><span>Last name</span>
+    <input type="text" 
+           placeholder="Last name"
+           name="lastName"
+           required
+    >
+  </label>
+</label>
+</fieldset>
+<fieldset><legend>Personal data</legend>
+<form action="/test" memthod="GET">
+  <label><span>Email</span>
+  <input type="email" 
+         placeholder="email"
+         name="email"
+         required
+         autocomplete="email">
+</label>
 <label><span>password</span>
     <input type="password">
   </label>
+</fieldset>
+<fieldset><legend>Optional data</legend>
+  <!-- <label><span>Male</span><input type="radio" name="sex" required checked value="1"></label>
+  <label><span>Female</span><input type="radio" name="sex"></label>
+  <label><span>HTML</span><input type="checkbox" name="course" value="1"></label>
+  <label><span>CSS</span><input type="checkbox" name="course" value="2"></label>
+  <label><span>JS</span><input type="checkbox" name="course" value="3"></label>
+   -->
+  <textarea name="" cols="30" rows="10"></textarea>
+
+  <!-- <select name="town">
+    <option value="1">Zp</option> -->
+  </select>
+  <label><span>Town</span>
+    <datalist id="Town List">
+     <option value="Zp">
+     <option value="Zp">
+     <option value="Zp">
+     <option value="Zp">
+     <option value="Zp">
+     <option value="Zp">
+     <option value="Zp">
+     <option value="Zp">
+     <option value="Zp">
+      </datalist>
+
+<input autofocus type="text" placeholder="Town" name="town" list="town-list">
+
+</fieldset>
+
+
+  <div class="btn-block">
+    <input type="reset" value="Reset">
     <input type="submit" value="Submit">
+  </div>
   </form>
 </body>
 </html>
