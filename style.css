@@ -43,9 +43,6 @@ label{
   display: flex;
   flex-direction: column;
 }
-.btn-block{
-  text-align: center;
-}
 *::placeholder{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-style: italic;
