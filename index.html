@@ -8,74 +8,46 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <form action="/test" memthod="GET">
-    <fieldset><legend>User name</legend>
-    <label><span>First name</span>
-    <input autofocus
+  <div class="wrap">
+    <h1>register</h1>
+    <p>Create your account. It's free and only takes a minute</p>
+    <form action="register" memthod="GET">
+      <input autofocus
            type="text" 
-           placeholder="First name"
+           placeholder="First Name"
            name="firstName"
            required
            autocomplete="username"
-           /*pattern="^[A-Z][a-z]{2,15}$"*/>
-  </label>
-  <form action="/test" memthod="GET">
-    <label><span>Last name</span>
-    <input type="text" 
-           placeholder="Last name"
+           class="user">
+           <input autofocus
+           type="text" 
+           placeholder="Last Name"
            name="lastName"
            required
-    >
-  </label>
-</label>
-</fieldset>
-<fieldset><legend>Personal data</legend>
-<form action="/test" memthod="GET">
-  <label><span>Email</span>
-  <input type="email" 
+           autocomplete="username"
+           class="user">
+ <input type="email" 
          placeholder="email"
          name="email"
          required
          autocomplete="email">
-</label>
-<label><span>password</span>
-    <input type="password">
-  </label>
-</fieldset>
-<fieldset><legend>Optional data</legend>
-  <!-- <label><span>Male</span><input type="radio" name="sex" required checked value="1"></label>
-  <label><span>Female</span><input type="radio" name="sex"></label>
-  <label><span>HTML</span><input type="checkbox" name="course" value="1"></label>
-  <label><span>CSS</span><input type="checkbox" name="course" value="2"></label>
-  <label><span>JS</span><input type="checkbox" name="course" value="3"></label>
-   -->
-  <textarea name="" cols="30" rows="10"></textarea>
-
-  <!-- <select name="town">
-    <option value="1">Zp</option> -->
-  </select>
-  <label><span>Town</span>
-    <datalist id="Town List">
-     <option value="Zp">
-     <option value="Zp">
-     <option value="Zp">
-     <option value="Zp">
-     <option value="Zp">
-     <option value="Zp">
-     <option value="Zp">
-     <option value="Zp">
-     <option value="Zp">
-      </datalist>
-
-<input autofocus type="text" placeholder="Town" name="town" list="town-list">
-
-</fieldset>
-
-
-  <div class="btn-block">
-    <input type="reset" value="Reset">
-    <input type="submit" value="Submit">
+  <input type="password"
+  placeholder="password"
+  name="password"
+  required
+  autocomplete="passwors">
+  <input type="password"
+  placeholder="confirm password"
+  name="confirm password"
+  required
+  autocomplete="confirm password">
+  <label><span><p>I accept the <a href="#">terms of use</a> & <a href="#">privacy policy</a></p></span><input type="checkbox" name="course" value="1"></label>
+ <input type="submit" value="register now">
+</form>
+<p></p>
   </div>
-  </form>
+  <p>already have an account? <a href="#">sign in</a></p>
+
+  
 </body>
 </html>
