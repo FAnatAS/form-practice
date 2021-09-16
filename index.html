@@ -9,45 +9,32 @@
 </head>
 <body>
   <div class="wrap">
-    <h1>register</h1>
+    <section class="register flex-column" >
+    <h1 class="register-heading">
+      <span class="overflow-text width-text">register</span>
+    </h1>
     <p>Create your account. It's free and only takes a minute</p>
-    <form action="register" memthod="GET">
-      <input autofocus
-           type="text" 
-           placeholder="First Name"
-           name="firstName"
-           required
-           autocomplete="username"
-           class="user">
-           <input autofocus
-           type="text" 
-           placeholder="Last Name"
-           name="lastName"
-           required
-           autocomplete="username"
-           class="user">
- <input type="email" 
-         placeholder="email"
-         name="email"
-         required
-         autocomplete="email">
-  <input type="password"
-  placeholder="password"
-  name="password"
-  required
-  autocomplete="passwors">
-  <input type="password"
-  placeholder="confirm password"
-  name="confirm password"
-  required
-  autocomplete="confirm password">
-  <label><span><p>I accept the <a href="#">terms of use</a> & <a href="#">privacy policy</a></p></span><input type="checkbox" name="course" value="1"></label>
- <input type="submit" value="register now">
+<form action="register" memthod="GET" class="register-form flex-column">
+      <div class="full-name">
+      <input autofocus type="text" placeholder="First Name" name="firstName" required autocomplete="username">
+      <input autofocus type="text" placeholder="Last Name" name="lastName" required autocomplete="username">
+    </div>
+      <input type="email" placeholder="email" name="email"
+         required autocomplete="email">
+  <input type="password" placeholder="password" name="password" required autocomplete="passwors">
+  <input type="password" placeholder="confirm password" name="confirmPassword" required autocomplete="confirm password">
+  <label class="accept">
+    <input type="checkbox" name="accept">
+    I accept the 
+        <a href="#">terms of use</a> 
+        &
+        <a href="#">privacy policy</a>
+    </label> 
+    <button type="submit" class="btn">register now</button>
 </form>
-<p></p>
-  </div>
-  <p>already have an account? <a href="#">sign in</a></p>
-
-  
+    </section>
+    <input type="checkbox" name="course" value="1">
+ <p>already have an account?<a href="#">sign in</a></p>
+</div>
 </body>
 </html>

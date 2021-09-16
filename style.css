@@ -1,20 +1,110 @@
-body{
-  background-color: #ddd;
+:root{
+  --main-color: #6e87aa;
+  --link-color: green;
+  --text-color: #9a9aa4;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wrap{
+  min-height: 100vh;
+  padding-top: 50px;
+  background-color: var(--main-color);
+  text-align: center;
+  font-family: sans-serif;
+}
+.register{
+  max-width: 500px;
+  width: 100%;
+  min-width: 300px;
+  min-height: 60vh;
+  margin: auto;
+  padding: 20px 50px;
+  /* display: flex;
+  flex-direction: column; */
+  background-color: #fff;
+}
+.register-heading{
+  position: relative;
+  width: 200px;
+  margin: auto;
+}
+.register-heading::before,
+.register-heading::after{
+  content: '';
+  display: block;
+  width: 35%;
+  height: 2px;
+  background-color: var(--text-color);
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+}
+.register-heading::before{
+  right: 100%;
+}
+.register-heading::after{
+  right: 0;
+}
+.register-form{
+  min-height: 50vh;
+  /* display: flex;
+  flex-direction: column; */
+  justify-content: space-evenly;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+.full-name{
+  display: flex;
+  justify-content: space-between;
+}
+.full-name>*{
+  width: 45%;
 }
 input{
-  padding: 10px;
-  min-width: 100px;
-  width: 150px;
-  max-width: 300px;
+  padding: 0.8em;
+  border: 1 px solid var(--text-color);
+  border-radius: 3px;
 }
-form{
+input::placeholder{
+  text-transform: capitalize;
+  font-size: 1em;
+}
+a{
+  color: var(--link-color);
+}
+a:not(p>a){
+  color: var(--link-color);
+  text-decoration: none;
+}
+.accept{
+  text-align: left;
+  color: var(--text-color);
+}
+.btn{
+  background-color: var(--link-color) ;
+  color: #fff;
+  padding: 10px;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+.overflow-text{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* form{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   max-width: 300px;
   min-height: 50vh;
   margin: auto;
-  /* border: 2px solid cadetblue; */
+ border: 2px solid cadetblue;
 }
 h1{
   text-transform: capitalize;
@@ -47,4 +137,5 @@ label{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-style: italic;
   font-size: 0.8em;
-}
+} */
+
